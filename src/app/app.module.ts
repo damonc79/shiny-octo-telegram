@@ -6,12 +6,20 @@ import { HttpModule } from "@angular/http";
 import { AppComponent } from './app.component';
 import { ServerComponent } from "./server/server.component";
 import { ServersComponent } from './servers/servers.component';
+import { SuccessAlertComponent } from "app/alerts/success/success-alert.component";
+import { WarningAlertComponent } from "app/alerts/warning/warning-alert.component";
+import { AlertsComponent } from "app/alerts/alerts.component";
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    AlertsComponent,
+    WarningAlertComponent,
+    SuccessAlertComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
