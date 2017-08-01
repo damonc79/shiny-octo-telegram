@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="statusChange()">Display Details</button>
+<div *ngIf="detailStatus">Red Staples Notebook</div>
+<div *ngFor="let detail of detailLog; let i = index"
+      [ngStyle]="{backgroundColor: getColor(i)}"
+      [ngClass]="{'alert': i >= 4}">
+      {{ detail }}
+<div>
+    
